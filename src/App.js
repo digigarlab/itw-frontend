@@ -1,11 +1,7 @@
-import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
-import Index from './pages/Index';
-import Room from './pages/Room';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Index from "./pages/Index";
+import Room from "./pages/Room";
 
 function App() {
   return (
@@ -15,7 +11,7 @@ function App() {
         <Route path="/:roomId" component={Room} />
       </Switch>
     </Router>
-  )
+  );
 }
 
 export default App;
